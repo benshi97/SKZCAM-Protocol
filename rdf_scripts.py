@@ -3,7 +3,6 @@ from ase.units import Bohr
 from ase.visualize import view
 import numpy as np
 import matplotlib.pyplot as plt
-plt.rcParams['text.usetex'] = True
 
 def get_test_cluster(filename='',output_filename='cluster_test.xyz',M_element='Mg',O_element='O',fmt='pun',pbc='False',supercell=[10,10,1]):
     if fmt == 'pun':
