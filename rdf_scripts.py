@@ -143,7 +143,7 @@ def get_rdf_cluster(filename='cluster_test.xyz',output_filename_append='',centre
     for i in range(num_rdf_clusters):
         cumulative_M_list = cumulative_M_list + indices_M_list[i]
         cumulative_M_indices += [get_atoms_list(cumulative_M_list,a,O_element,MO_dist,\
-            'Structures/{1}cluster_rdf_{0}.xyz'.format(i+1,output_filename_append))]
+            'Structures/{0}cluster_rdf_{1:02d}.xyz'.format(output_filename_append, i+1))]
 
     # Plot out RDF plot
     fig, axs = plt.subplots(figsize=(6.69,3),dpi=300, constrained_layout=True)
